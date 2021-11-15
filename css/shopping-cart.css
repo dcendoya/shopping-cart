@@ -1,0 +1,262 @@
+html {
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.listado-productos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.producto {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 30px;
+    /* min-width: 10rem;
+    max-width: 300px; */
+    width: 300px;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    display: grid;
+}
+
+.oferta-descuento-1 {
+    color: #0492C2;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 600;
+    display: none;
+}
+
+.oferta-descuento-2 {
+    color: #0492C2;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 600;
+    display: none;
+}
+
+.fila-precio-total {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#precio-total {
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 480px) {
+    .producto {
+        grid-template-rows: 2fr, 1fr, 10%;
+        grid-template-columns: 1fr, 1fr;
+        grid-column-gap: 2rem;
+    }
+
+    .imgProducto {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .descripcionProducto {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .qUnidades {
+        grid-column: 1/span 2;
+        grid-row: 2;
+    }
+
+    .botonAgregar {
+        grid-column: 1/span 2;
+        grid-row: 3;
+    }
+
+}
+
+
+
+.cajaMonto {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 30px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* min-width: 10rem;
+    max-width: 800px; */
+    width: fit-content;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img {
+    border-radius: 10px;
+    border: solid 5px #f1f1f1;
+}
+
+.titleDiv {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 0.5rem;
+}
+
+
+.boton {
+    border-radius: 30px;
+    border-style: none;
+    background-color: #f1f1f1;
+    padding: 7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.boton:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+
+.qUnidades {
+    margin-top: 40px;
+}
+
+.precio {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 2rem;
+    border-style: none;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botonConfirmar {
+    border-style: none;
+    border-radius: 30px;
+    background-color: #c6c6c6;
+    padding: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+.botonConfirmar:hover {
+    transition: all 0.5s;
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.botonesMM {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+.botonMas {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+th {
+    text-transform: uppercase;
+    padding: 0px 20px 0px 20px;
+}
+
+td {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+}
+
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+#primer-parrafo-modal {
+    margin-bottom: 40px;
+}
+
+#datos-bancarios {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+#modal-cantidad {
+    margin-top: 40px;
+}

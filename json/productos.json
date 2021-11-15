@@ -1,0 +1,82 @@
+[
+    
+    {
+        "id": 1,
+        "nombre": "camisa",
+        "color": "azul",
+        "talle": "M",
+        "precio": 3000,
+        "foto": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg",
+        "cantidad": 0
+    },
+    
+    {
+        "id": 2,
+        "nombre": "buzo",
+        "color": "rojo",
+        "talle": "L",
+        "precio": 4000,
+        "foto": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg",
+        "cantidad": 0
+    },
+    
+    {
+        "id": 3,
+        "nombre": "remera",
+        "color": "amarillo",
+        "talle": "S",
+        "precio": 1500,
+        "foto": "https://http2.mlstatic.com/D_NQ_NP_664689-MLA42448756413_072020-V.jpg",
+        "cantidad": 0
+    },
+    
+    {
+        "id": 4,
+        "nombre": "campera",
+        "color": "negro",
+        "talle": "XL",
+        "precio": 7000,
+        "foto": "data:image/jpeg;base64,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",
+        "cantidad": 0
+    },
+      
+    {
+        "id": 5,
+        "nombre": "musculosa",
+        "color": "verde",
+        "talle": "M",
+        "precio": 900,
+        "foto": "https://static.dafiti.com.ar/p/como-quieres-9490-094055-1-product.jpg",
+        "cantidad": 0
+    },
+
+    {
+        "id": 6,
+        "nombre": "top deportivo",
+        "color": "rosa",
+        "talle": "S",
+        "precio": 3500,
+        "foto": "https://assets.adidas.com/images/w_600,f_auto,q_auto/9cffd4bca86240689bd8a577011dd9bd_9366/Top_Deportivo_Racer-Back_3_Tiras_Rosa_S93386_01_laydown.jpg",
+        "cantidad": 0
+    },
+
+    {
+        "id": 7,
+        "nombre": "blusa",
+        "color": "estampado animal print",
+        "talle": "M",
+        "precio": 2500,
+        "foto": "https://static.pullandbear.net/2/photos/2021/I/0/1/p/4470/325/051/4470325051_1_1_3.jpg?t=1629375563314",
+        "cantidad": 0
+    },
+
+    {
+        "id": 8,
+        "nombre": "crop top",
+        "color": "negro",
+        "talle": "L",
+        "precio": 1100,
+        "foto": "https://http2.mlstatic.com/D_NQ_NP_911904-MLM41704461325_052020-O.jpg",
+        "cantidad": 0
+    }
+]

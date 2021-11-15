@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/shopping-cart.css"/>
+    <title>Carrito de compras</title>
+</head>
+<body>
+  <section>
+    <div class="productChart">
+      <div class="titleDiv">
+        <h1 class="title">Productos > Parte Superior</h1>
+      </div>
+      <div class="listado-productos">
+      </div>
+    </div>
+      
+    <div class="cajaMonto">
+      <div>
+        <h2 class="title">Productos en el carrito</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Art.</th>
+              <th>Ítem</th>
+              <th>Color</th>
+              <th>Cant.</th>
+              <th>Precio</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="filaItemTabla">
+            <tr class="fila-precio-total">
+              <td>Total</td>
+              <td></td>
+              <td></td>
+              <td id="cantidad-total"></td>
+              <td id="precio-total"></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button id="botonConfirmar" class="botonConfirmar" type="button">Confirmar carrito</button>
+      <div id="modalContainer" class="modal">
+        <div id="modal-content" class="modal-content">
+          <span class="close">&times;</span>
+          <p id="primer-parrafo-modal">¡Registramos tu pedido!</p>
+          <p>Por favor, realizá una transferencia bancaria por el monto total a la siguiente cuenta:</p>
+          <p id="datos-bancarios"><br>CBU: 01234567891</br><br>Alias: oneclass.indumentaria</br></p>
+          <p id="modal-cantidad"></p>
+          <p id="modal-precio"></p>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/shopping-cart.js"></script>
+</body>
+</html>
